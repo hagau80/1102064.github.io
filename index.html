@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>楊克勤個人簡介</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Noto Sans TC", "微軟正黑體", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #fefefe, #f8ebe8);
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* -------- Header -------- */
+    header {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+    }
+
+    header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* -------- Nav -------- */
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background: linear-gradient(90deg, #ffb6c1, #ff8a8a);
+      padding: 10px 0;
+    }
+
+    nav a {
+      flex: 1;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    nav a img {
+      width: 70px;
+      height: 70px;
+      object-fit: contain;
+      border-radius: 50%;
+      background-color: white;
+      padding: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    nav a:hover {
+      transform: scale(1.05);
+    }
+
+    /* -------- 內容主體 (三欄式) -------- */
+    .content {
+      display: flex;
+      flex-wrap: nowrap;
+      min-height: 400px;
+    }
+
+    aside.left {
+      flex: 1;
+      background-color: #e6f4ea;
+      text-align: center;
+      padding: 20px;
+      color: #2d6a4f;
+    }
+
+    aside.right {
+      flex: 1;
+      background-color: #fff7e6;
+      text-align: center;
+      padding: 20px;
+      color: #a15c00;
+    }
+
+    main {
+      flex: 2;
+      background-color: #f0f8ff;
+      padding: 30px;
+    }
+
+    /* -------- Main內容 -------- */
+    main article p {
+      margin: 10px 0;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    main article p.name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2a5b9c;
+    }
+
+    main section img {
+      width: 100%;
+      border-radius: 15px;
+      margin-top: 15px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* -------- Aside圖片 -------- */
+    aside img {
+      width: 90%;
+      border-radius: 15px;
+      margin-top: 15px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* -------- Footer -------- */
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 2px solid #ddd;
+    }
+
+    /* -------- RWD -------- */
+    @media (max-width: 900px) {
+      .content {
+        flex-direction: column;
+      }
+      aside.left, aside.right, main {
+        flex: 1;
+        width: 100%;
+      }
+      nav a img {
+        width: 55px;
+        height: 55px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="ccj">
+    <header>
+      <img src="5.jpg" alt="封面圖片">
+    </header>
+
+    <nav>
+      <a href="https://www.youtube.com/"><img src="1.jpg" alt="YouTube"></a>
+      <a href="https://www.tiktok.com/explore"><img src="2.jpg" alt="TikTok"></a>
+      <a href="https://www.yzu.edu.tw/"><img src="3.png" alt="元智大學"></a>
+      <a href="https://shopee.tw/"><img src="4.png" alt="蝦皮購物"></a>
+    </nav>
+
+    <div class="content">
+      <!-- 左側 aside -->
+      <aside class="left">
+        <h3>老阿伯現滷豆干 🍢</h3>
+        <img src="6.png" alt="豆干圖片">
+      </aside>
+
+      <!-- 中間 main -->
+      <main>
+        <article>
+          <p class="name">姓名：楊克勤</p>
+          <p>性別：男性</p>
+          <p>系別：資訊傳播學系</p>
+          <p>年級：五年級</p>
+          <p>組別：智慧科技應用組</p>
+          <p>簡介：<i>老師好，我是一位大五的學生，我會加油！希望明年不用再看到老師，哈哈哈～謝謝老師！</i></p>
+          <p>興趣：喜歡打籃球和慢跑</p>
+          <p>專長：會剪輯，也有 PR 證照</p>
+          <p>愛吃的食物：壽司、豆花、滷味</p>
+
+          <section><img src="01.jpg" alt="生活照1"></section>
+          <section><img src="02.jpg" alt="生活照2"></section>
+        </article>
+      </main>
+
+      <!-- 右側 aside -->
+      <aside class="right">
+        <h3>好吃喔！😋</h3>
+        <img src="7.png" alt="好吃圖片">
+      </aside>
+    </div>
+
+    <footer>© 2025 楊克勤個人介紹頁 | Designed with ❤️</footer>
+  </div>
+</body>
+</html>
